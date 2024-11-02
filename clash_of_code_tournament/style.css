@@ -32,7 +32,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 5px solid rgba(0, 128, 0, 0.654);
+    border: 5px solid rgba(248, 41, 4, 0.654);
+    animation-name: live;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
 }
 
 .container .cpc-logo {
@@ -48,4 +52,27 @@ body {
     height: 100%;
     padding: 10px;
     background-color: #272727;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounds-header {
+    letter-spacing: 10px;
+    color: #08d189;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+@keyframes live {
+    from {border-color: rgba(255, 0, 0, 0.631);}
+    to {border-color: #272727;}
 }
