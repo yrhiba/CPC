@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #272727;
 }
 
 .global-container {
@@ -76,4 +77,28 @@ body {
 @keyframes live {
     from {border-color: rgba(255, 0, 0, 0.631);}
     to {border-color: #272727;}
+}
+
+@media only screen and (max-width: 900px) {
+    .links {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .links a {
+        font-size: 10px;
+    }
+    .cpc-logo {
+        display: none;
+    }
 }
